@@ -63,6 +63,21 @@
   margin-left: 30px;
 }
 
+.progress-container {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 4px;
+  width: 30%;
+  transition: width 0.1s linear;
+}
+
 .music-controls {
   width: 15rem;
   display: flex;
