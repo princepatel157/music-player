@@ -17,7 +17,7 @@ const songData = [
   },
   {
     name: "bang",
-    title: "Bang Band",
+    title: "Bang Bang",
     artist: "Dua Lipa",
     img: "./images/dua-1.jpg",
   },
