@@ -67,6 +67,11 @@
   margin-left: 30px;
 }
 
+.progressTime {
+  color: white;
+  margin-left: 20px;
+}
+
 .progress-container {
   background-color: #fff;
   border-radius: 5px;
@@ -78,7 +83,7 @@
   background-color: #fe8daa;
   border-radius: 5px;
   height: 4px;
-  width: 30%;
+  width: 0%;
   transition: width 0.1s linear;
 }
 

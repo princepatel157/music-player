@@ -6,6 +6,9 @@ const title = document.getElementById("title");
 const artist = document.getElementById("artist");
 const image = document.getElementById("image");
 const bgimg = document.querySelector(":root");
+const progress = document.getElementById("progressBar");
+const time = document.getElementById("time");
+const totalTime = document.getElementById("totalTime");
 
 // song data
 const songData = [
@@ -64,6 +67,14 @@ const preSong = () => {
   playMusic();
 };
 
+const updateProgress = (e) => {
+  const { duration, currentTime } = e.srcElement;
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
+  time.textContent = (currentTime / 60).toFixed(2);
+  totalTime.textContent = (duration / 60).toFixed(2);
+};
+
 //events
 play.addEventListener("click", () => {
   isPlaying ? pauseMusic() : playMusic();
@@ -71,3 +82,5 @@ play.addEventListener("click", () => {
 
 next.addEventListener("click", nextSong);
 pre.addEventListener("click", preSong);
+
+audio.addEventListener("timeupdate", updateProgress);

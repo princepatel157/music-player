@@ -24,8 +24,12 @@
           <h2 id="title" class="songName">Song</h2>
           <h4 id="artist" class="artistName">Artist</h4>
           <audio src="./songs/levi.mp3"></audio>
+          <div class="progressTime">
+            <span id="time">00:00</span> /
+            <span id="totalTime">00:00</span>
+          </div>
           <div class="progress-container">
-            <div class="progress"></div>
+            <div class="progress" id="progressBar"></div>
           </div>
           <div class="music-controls">
             <i class="fas fa-backward" id="pre" title="Previous"></i>
