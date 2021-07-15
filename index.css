@@ -20,6 +20,12 @@
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  background: linear-gradient(
+      135deg,
+      hsla(348, 97%, 63%, 0.65),
+      hsla(230, 96%, 30%, 0.65)
+    ),
+    url("./images/dua-2.jpg") no-repeat center center / cover;
 }
 
 .img-col {
@@ -27,7 +33,7 @@
   height: 14rem;
 }
 
-img {
+.img-col img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -44,7 +50,7 @@ img {
   word-spacing: 0.5rem;
   color: #171717;
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 20px;
 }
 .control-col #artist {
@@ -66,7 +72,7 @@ img {
   margin-left: 20px;
 }
 .music-controls .fas {
-  color: #111111;
+  color: #f8f7f7;
   font-size: 2rem;
   cursor: pointer;
   filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
@@ -76,7 +82,8 @@ img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: rgb(80, 22, 85);
+  /* background-color: rgb(0, 0, 0); */
+  border: 2px solid rgb(240, 238, 235);
   color: #f6f6f6;
   font-size: 1.3rem;
   display: flex;
