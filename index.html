@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media-launcher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="main-con">
+      <section class="music-con">
+        <div class="img-col">
+          <img src="./images/dua-1.jpg" />
+        </div>
+        <div class="control-col">
+          <h2 id="title" class="songName">Song</h2>
+          <h4 id="artist" class="artistName">Artist</h4>
+          <audio src="./songs/levi.mp3"></audio>
+          <div class="music-controls">
+            <i class="fas fa-backward" id="pre" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
