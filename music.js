@@ -5,6 +5,7 @@ const next = document.getElementById("next");
 const title = document.getElementById("title");
 const artist = document.getElementById("artist");
 const image = document.getElementById("image");
+const bgimg = document.querySelector(":root");
 
 // song data
 const songData = [
@@ -47,6 +48,7 @@ const loadSong = (songData) => {
   artist.textContent = songData.artist;
   image.src = songData.img;
   audio.src = "./songs/" + songData.name + ".mp3";
+  bgimg.style.setProperty("--bgsrc", "url(" + songData.img + ")");
 };
 songIndex = 0;
 loadSong(songData[0]);
