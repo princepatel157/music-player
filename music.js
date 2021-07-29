@@ -69,7 +69,7 @@ const preSong = () => {
 
 const updateProgress = (e) => {
   const { duration, currentTime } = e.srcElement;
-  const progressPercent = (currentTime / duration) * 100;
+  const progressPercent = (currentTime / duration) * 60;
   progress.style.width = `${progressPercent}%`;
   time.textContent = (currentTime / 60).toFixed(2);
   totalTime.textContent = (duration / 60).toFixed(2);
